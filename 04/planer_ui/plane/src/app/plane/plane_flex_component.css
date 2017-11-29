@@ -1,0 +1,44 @@
+.box-container {
+    border: 2px solid black ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    margin-top:15px ;
+  }
+
+.box {
+     flex: 1;
+     font-size: 40;
+     text-align: center;
+     margin: 0;
+     padding: 20px;
+}
+
+.host {
+  background-color: #1db749 ;
+}
+.ip {
+  background-color: OrangeRed  ;
+}
+.model {
+  background-color: PaleTurquoise ;
+}
+.distance_km {
+  background-color: #e2df1b ;
+}
+.speed_km_h {
+  background-color: #87235a ;
+}
+.total_passengers {
+  background-color: RebeccaPurple ;
+}
+.ipsum {
+  background-color: #4a594f ;
+}
+
+sup { 
+    vertical-align: super;
+    font-size: 15px ;
+    background-color: #0fe224 ;
+}
+
