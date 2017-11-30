@@ -253,7 +253,7 @@ do_install() {
 
 			You may press Ctrl+C now to abort this script.
 		EOF
-		( set -x; sleep 20 )
+		( set -x; sleep 5 )
 	fi
 
 	user="$(id -un 2>/dev/null || true)"
