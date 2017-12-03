@@ -1,0 +1,11 @@
+# Image / container de build
+
+FROM maven:3.5.0-jdk-8 AS JAVA
+
+COPY plane/ /usr/src/app 
+
+RUN cd /usr/src/app && mvn clean package 
+
+RUN mv /usr/src/app/target/planer-root-66-swarm.jar /opt
+
+CMD ["java","-jar","/opt/planer-root-66-swarm.jar"]
