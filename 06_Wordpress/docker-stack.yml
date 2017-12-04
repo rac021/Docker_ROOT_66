@@ -49,5 +49,5 @@ networks:
   backend_network:
   
 volumes:
-  - my_sql_db_data:
-  - wp_content:
+  my_sql_db_data:
+  wp_content:
