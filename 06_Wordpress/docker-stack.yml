@@ -9,7 +9,7 @@ services:
     hostname: my.site.com
     restart: always
     volumes:
-      - wp-content:/var/www/html/wp-content 
+      - wp_content:/var/www/html/wp-content 
     environment:
       WORDPRESS_DB_HOST: my_sql_db:3306
       WORDPRESS_DB_PASSWORD: p4ssw0rd!
@@ -50,4 +50,4 @@ networks:
   
 volumes:
   my_sql_db_data:
-  wp-content:
+  wp_content:
