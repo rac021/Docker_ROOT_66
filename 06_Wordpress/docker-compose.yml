@@ -1,6 +1,7 @@
 version: '3'
 
 services:
+
   wordpress:
     depends_on:
       - my_sql_db
@@ -20,6 +21,7 @@ services:
       - 443:443
     networks:
       - backend_network
+      
   my_sql_db:
     image: mysql:8.0.0
     restart: always
@@ -29,6 +31,7 @@ services:
       MYSQL_ROOT_PASSWORD: p4ssw0rd!
     networks:
       - backend_network
+      
   phpmyadmin:
     depends_on:
       - my_sql_db
@@ -41,8 +44,10 @@ services:
       MYSQL_ROOT_PASSWORD: p4ssw0rd!
     networks:
       - backend_network
+      
 networks:
   backend_network:
+  
 volumes:
   my_sql_db_data:
 
